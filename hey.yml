@@ -1,0 +1,25 @@
+---
+hiren: "I am a remote devops engineer"
+200280116115: "This is the mobile number of hiren timbadiya"
+---
+
+---
+# Lists
+Technologies:
+  - DevOps
+  - Cloud
+  - DevRel
+
+eggItems:
+  - Lasan Tadka
+  - Golden Tadka
+  - Paplet
+  - Rajwadi Omelete 
+
+---
+cities: [Surat, London, Dubai] 
+#works same as above, helps to get rid of some indentetion mistakes
+---
+# for key value pairs
+{mango : "fruit" , dog: "animal" , hiren : "don"}
+...

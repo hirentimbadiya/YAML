@@ -1,0 +1,48 @@
+#? Strings Variables
+name: Hiren Timbadiya
+fruit: "Mango"
+game: 'cricket'
+
+bio: |
+  Virat Kohli is the best cricketer.
+  He is the heart of the Indian cricket team.
+
+#! write a single line in multiple lines
+message: >
+  this will be
+  in one line
+
+#! same as
+msg: this will be in one line
+
+
+#? Numbers (Int & Float)
+
+centuries: 76
+average: 538.93
+
+#? boolean
+
+winningWC: true
+
+
+#? explicitly specifying datatype to yml
+
+marks: !!int 100
+cgpa: !!float 8.65
+pass/fail: !!bool true
+college: !!str L.D.C.E
+infinite: !!float .inf
+not a number: .nan
+hexa: !!int 0x54
+exponentialNumbers: 5.99E67
+
+#? NULL
+bottle: !!null NULL # we can use null , NULL , ~
+~: this is a null key
+
+#? Dates & Time
+date: 2023-08-06
+datetime: 2023-08-06T15:30:00
+dateTime: 2023-08-06T03:30:00 PM #! 12 hour clock, predefined UTC timezone
+datetimeIST: 2023-08-06T03:30:00 PM+05:30 #! IST TimeZone

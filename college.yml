@@ -1,0 +1,16 @@
+---
+College:
+  - _name: PPSV
+    _principal: mahesh savani
+    Students:
+      Student:
+        - name: Hiren
+          age: '20'
+          gender: male
+        - name: Sunny
+          age: '26'
+          gender: female
+        - name: Becky
+          age: '31'
+          gender: female
+...

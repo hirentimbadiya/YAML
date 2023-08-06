@@ -1,0 +1,70 @@
+student: !!seq
+ - name
+ - rollNo
+ - age 
+ - gender 
+
+#! some of the keys of the seq will be empty
+#! sparse Sequence
+sparse seq:
+ - hey
+ - how
+ - 
+ - NULL
+
+#? Nested Sequence
+games:
+  - cricket:
+      - bat
+      - ball
+      - stumps
+  - hockey:
+      - hockey stick
+      - ball
+
+#? key: value pairs called maps -> !!map
+person:
+  name: Hiren Timbadiya
+  age: 20
+  contact:
+    email: hirudon@example.com
+    phone: {home: 123-456-7890 , work: 987-654-3210} 
+    #! can also use brackets like above
+  
+
+#! pairs may have duplicate values -> !!pairs
+#? this gets converted into an array of hashmap in json
+pair example: !!pairs
+ - job: student
+ - job: developer
+ - job: investor
+
+#* !!set will allow you to have unique key values
+unique example: !!set
+ ? Hiren 
+ ? Becky  
+ ? Sunny
+
+#? to use dictionary we use -> !!omap
+Movies: !!omap
+  - RRR: 
+    - Director: S.S. Rajamauli
+    - Budget: 550 CR₹
+  - KGF: 
+    - Director: Prashanth Neil
+    - Budget: 110 CR₹
+  - Kantara:
+    - Director: Rishab Shetty
+    - Budget: 16 CR₹
+
+#! reusing some properties we use Anchors
+#? to give anchor -> &anchorName
+likings: &likes
+  favourite color: red
+  favourite game: cricket
+  favourite player: virat kohli
+
+boy:
+  name: hiren
+  <<: *likes #! using above properties
+  favourite color: pink #! we can also override

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<College>
+  <_name>PPSV</_name>
+  <_principal>mahesh savani</_principal>
+  <Students>
+    <Student>
+      <name>Hiren</name>
+      <age>20</age>
+      <gender>male</gender>
+    </Student>
+    <Student>
+      <name>Sunny</name>
+      <age>26</age>
+      <gender>female</gender>
+    </Student>
+    <Student>
+      <name>Becky</name>
+      <age>31</age>
+      <gender>female</gender>
+    </Student>
+  </Students>
+</College>
