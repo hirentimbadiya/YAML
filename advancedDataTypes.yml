@@ -23,7 +23,7 @@ games:
       - ball
 
 #? key: value pairs called maps -> !!map
-person:
+person: !!map
   name: Hiren Timbadiya
   age: 20
   contact:
